@@ -1,0 +1,212 @@
+/*基础设定*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: #000000;
+    background-color: #f6f6f6;
+}
+/*头框 导航栏*/
+header {
+    color: #000000;
+    background-color: #000000;
+    height: 60px;
+}
+
+nav {
+    float: left;
+    margin-left: 30px;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration:none;
+}
+
+h3 a:hover{
+    color: #87bff2;
+}
+
+h3 a{
+    padding: 15px;
+}
+
+.div-left{
+    float: right;
+}
+
+.div-right {
+    color: #FFFFFF;
+    float: right;
+}
+
+#main {
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: auto;
+    margin-right: auto;
+}
+
+#main li {
+    cursor: pointer;
+}
+/*我的 下拉*/
+.drop {
+    display: block;
+    overflow: hidden;
+    list-style: none;
+    clear: both;
+    margin-right: 40px;
+}
+
+.drop div {
+    width: 100px;
+    position: relative;
+    transform: translate(0, -100%);
+    transition: all 0.5s 0.1s;
+}
+
+.drop div li {
+    padding: 0;
+    width: 100%;
+    background: #000000 !important;
+}
+
+#main li:hover ul div {
+    transform: translate(0, 0);
+}
+
+li a {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.main-info {
+    width: 100%;
+    height:900px;
+}
+
+.main-left {
+    float: left;
+    width: 25%;
+}
+
+.main-right {
+    float: left;
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+.search-area {
+    width: 80%;
+    height: 60px;
+    background: #bcefec;
+    margin: 0px 15%;
+    border-radius: 5px;
+}
+.search-title {
+    margin: auto;
+    width: 100%;
+    background: #64d6cc;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.search-line {
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#search-text {
+    width: 70%;
+    height: 20px;
+    border-radius: 5px;
+}
+
+#search-submit {
+    width: 20%;
+    height: 26px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-line p {
+    margin: 5px;
+}
+
+.search-line p a {
+    color: #167CDD;
+    width: 100%;
+    cursor: pointer;
+}
+
+.hot-content {
+    width: 80%;
+    background: #bcefec;
+    margin: 30px 15%;
+    border-radius: 5px;
+}
+
+.filter {
+    width: 94%;
+    background: #64d6cc;
+    margin: 0px 3%;
+    border-radius: 5px;
+}
+
+.filter-select {
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+}
+
+.select {
+    width: 20%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px 2%;
+}
+
+.select-button {
+    width: 15%;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-result {
+    width: 100%;
+    font-size: 25px;
+    background: #e0f1ec;
+    overflow: hidden;
+}
+
+.pages {
+    width: 96%;
+    float: left;
+    text-align: center;
+}
+
+.page {
+    color: #2E7BAD;
+}
+
+
+/*footer*/
+footer{
+    background-color: #FFFFFF;
+    height: 40px;
+    width: 100%;
+}
+
+.copyright {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+.footer-a {
+    color: #000000;
+}

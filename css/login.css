@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: #000000;
+    background-color: #f6f6f6;
+}
+
+header {
+    color: #000000;
+    background-color: #000000;
+    height: 60px;
+}
+
+nav {
+    float: left;
+    margin-left: 30px;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration:none;
+}
+
+h3 a:hover{
+    color: #87bff2;
+}
+
+h3 a{
+    padding: 15px;
+}
+
+.div-left{
+    float: right;
+}
+
+.div-right {
+    color: #FFFFFF;
+    float: right;
+}
+/*下拉栏样式*/
+#main {
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: auto;
+    margin-right: auto;
+}
+
+#main li {
+    cursor: pointer;
+}
+
+.drop {
+    display: block;
+    overflow: hidden;
+    list-style: none;
+    clear: both;
+    margin-right: 40px;
+}
+
+.drop div {
+    width: 100px;
+    position: relative;
+    transform: translate(0, -100%);
+    transition: all 0.5s 0.1s;
+}
+
+.drop div li {
+    padding: 0;
+    width: 100%;
+    background: #000000 !important;
+}
+
+#main li:hover ul div {
+    transform: translate(0, 0);
+}
+
+li a {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.login {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.login-title {
+    font-size: 25px;
+    text-align: center;
+}
+
+.login-text {
+    width: 260px;
+    height: 280px;
+    margin: -5px 70px 0px;
+    background: #e0f1ec;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 16px;
+    border: 1px solid #c6d9fe;
+}
+
+.login-submit {
+    margin-top: 20px;
+    margin-left: 3px;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+footer{
+    background-color: #FFFFFF;
+    height: 40px;
+    width: 100%;
+}
+
+.copyright {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+.footer-a {
+    color: #000000;
+}

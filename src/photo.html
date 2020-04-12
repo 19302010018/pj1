@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href = ../css/photo.css rel="stylesheet" type="text/css">
+    <title>照片详情</title>
+    <script type="text/javascript">
+        function display_alert(){
+            alert("图片已添加进喜欢！")
+        }
+    </script>
+</head>
+<body>
+<header id="head">
+    <nav>
+        <h3>
+            <div class="div-left">
+                <a href="../index.html">首页</a>
+                <a href="browse.html">浏览</a>
+                <a href="search.html">搜索</a>
+            </div>
+        </h3>
+    </nav>
+    <div class="div-right">
+        <h3>
+            <ul id="main">
+                <li>我的
+                    <ul class="drop">
+                        <div>
+                            <li><a href="upload.html">上传</a></li>
+                            <li><a href="myphoto.html">照片</a></li>
+                            <li><a href="favor.html">喜欢</a></li>
+                            <li><a href="login.html">登陆</a></li>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </h3>
+    </div>
+</header>
+    <div class="photo">
+        <figure>
+            <div class="bg">
+                <a href="photo.html"><img class="normalPic" src="../images/normal/medium/222222.jpg"></a>
+            </div>
+            <figcaption>
+                <div class="name">图片</div>
+                <p>
+                <div class="description">
+                    图片描述
+                </div>
+                </p>
+                <p>
+                <div class="description">
+                    主题
+                </div>
+                </p>
+                <p>
+                <div class="description">
+                    拍摄城市
+                </div>
+                </p>
+                <p>
+                <div class="description">
+                    拍摄国家
+                </div>
+                </p>
+                <p>
+                <div class="description">
+                    拍摄者
+                </div>
+                </p>
+                <p>
+                <div class="description" style="color:#ef9cd5">
+                    已收藏：5
+                </div>
+                </p>
+            </figcaption>
+            <form action="#" method="post">
+                <input type="button" name="like" value="收藏" onclick="display_alert()">
+            </form>
+        </figure>
+    </div>
+
+</body>
+</html>

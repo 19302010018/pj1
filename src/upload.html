@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传</title>
+    <link href="../css/upload.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        var file = document.getElementById('file');
+        var image = document.getElementById("PicFromUser");
+        file.onchange = function() {
+            var fileData = this.files[0];
+            var pettern = /^image/;
+            console.info(fileData.type)
+            if (!pettern.test(fileData.type)) {
+                alert("图片格式不正确");
+                return;
+            }
+            var reader = new FileReader();
+            reader.readAsDataURL(fileData);
+            reader.onload = function(e) {
+                console.log(e);
+                console.log(this.result);
+                image.setAttribute("src", this.result);
+            }
+            document.getElementById("placeholder").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+<header id="head">
+    <nav>
+        <h3>
+            <div class="div-left">
+                <a href="../index.html" style="color:#bcefec">首页</a>
+                <a href="browse.html" class="link">浏览</a>
+                <a href="search.html" class="link">搜索</a>
+            </div>
+        </h3>
+    </nav>
+    <div class="div-right">
+        <h3>
+            <ul id="main">
+                <li>我的
+                    <ul class="drop">
+                        <div>
+                            <li><a href="upload.html">上传</a></li>
+                            <li><a href="myphoto.html">照片</a></li>
+                            <li><a href="favor.html">喜欢</a></li>
+                            <li><a href="login.html">登陆</a></li>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </h3>
+    </div>
+</header>
+<br>
+<br>
+
+<main>
+    <form method="post" action="#">
+        <fieldset>
+            <legend>上传图片</legend>
+            <div class="uploadPic">
+                <img id="PicFromUser" src=""/>
+                <p id="placeholder">暂未上传图片</p>
+            </div>
+            <div class="wrap">
+                <span>选择</span>
+                <input type="file" id="file">
+            </div>
+            <label>图片名: <input type="text" required></label>
+            <label>图片描述: <textarea required></textarea></label>
+            <label>拍摄国家: <input type="text" required></label>
+            <label>拍摄城市: <input type="text" required ></label>
+            <input type="button" value="上传" onclick="window.location.href='myphoto.html';alert('上传成功');">
+        </fieldset>
+    </form>
+</main>
+<footer>
+    <div class = "copyright">
+        <p>
+            <a href="register.html" class = "footer-a">
+                Copyright © 2020-2022 Web fundamental Project1.All Rights Reserved. 备案号：19302010018@fudan.edu.cn>
+            </a>
+        </p>
+    </div>
+</footer>
+</body>
+
+
+</html>
