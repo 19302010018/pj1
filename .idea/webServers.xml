@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="35c4a0bf-81f0-440b-8d45-5589aba249b7" name="pj2" url="http://localhost:80/projects/pj2-try">
+        <fileTransfer port="0" mountedRoot="F:\phpstudy_pro\WWW\projects\pj2-try" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

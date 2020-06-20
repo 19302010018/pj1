@@ -16,11 +16,6 @@ nav {
     margin-left: 30px;
 }
 
-a {
-    color: #FFFFFF;
-    text-decoration:none;
-}
-
 h3 a:hover{
     color: #87bff2;
 }
@@ -177,4 +172,8 @@ input[type="button"]{
 }
 input[type="button"]:hover{
     background-color: #bcefec;
+}
+
+.page{
+    color : #167CDD;
 }
