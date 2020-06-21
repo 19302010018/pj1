@@ -64,7 +64,7 @@ require_once('config.php');
                 request.send();
             }
         }
-    </script><!--二级联动 --!>
+    </script><!--二级联动 -->
 </head>
 <body>
 <?php
